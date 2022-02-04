@@ -1,0 +1,785 @@
+/* Navber Area Start */
+
+nav {
+  width: 100%;
+}
+
+.nav-ul {
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  padding-left: 0rem;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-ul-li-a:hover {
+  color: #00ab08;
+  text-decoration: none;
+}
+
+header ul a {
+  color: #00ab08;
+}
+
+header ul li {
+  padding: 5px;
+  margin: 0px 14px;
+  font-size: 22px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  background-color: #00ab08;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  padding-left: 0rem;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  .welcome-logo {
+    margin-top: 0px !important;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+/* Navber Area End */
+
+/* Welcome-Section Start */
+.welcome {
+  background-image: url(/images/welcome.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .welcome-logo {
+    margin-top: 70px;
+  }
+
+  .welcome-container {
+    text-align: center;
+
+    .welcome-p {
+      font-size: 18px;
+      color: white;
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+
+    .welcome-p-span {
+      color: #00ab08;
+    }
+
+    .mint-now {
+      background-color: #00ab08 !important;
+      color: white;
+      border: 0px;
+      padding: 8px 14px;
+    }
+
+    .welcome-social-icons {
+      margin-top: 38px;
+
+      .welcome-social-icons-img {
+        margin: 20px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+/* Welcome-Section End */
+
+/* Story-Section Start */
+.story {
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+  .ourstory {
+    margin-bottom: 40px;
+    font-size: 55px;
+    color: #00ab08;
+  }
+
+  .story-img {
+    width: 100%;
+  }
+
+  .ourstory-p {
+    color: white;
+    font-size: 16px;
+    padding-right: 50px;
+  }
+}
+/* Story-Section End */
+
+/* Evo-Section Start */
+.evolution {
+  background-image: url(images/evo.svg);
+
+  .evo {
+    margin-top: 35px;
+    font-size: 55px;
+    color: #00ab08;
+    margin-bottom: 10px;
+  }
+
+  .evo-p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 45px;
+  }
+
+  .evo-card {
+    background-color: #000e06;
+    padding: 15px;
+    height: auto;
+    margin-bottom: 60px;
+
+    .evocard-header-texts {
+      margin-top: 10px;
+      margin-bottom: 30px;
+
+      .evocard-header-texts-green {
+        color: #00ab08;
+        font-size: 30px;
+      }
+
+      .evocard-header-texts-white {
+        color: white;
+        font-size: 30px;
+      }
+    }
+
+    .evo-card-p-div {
+      margin-bottom: 30px;
+
+      .evo-card-p {
+        margin-bottom: 0px;
+        color: white;
+
+        .evo-card-p-dots {
+          color: #00ab08 !important;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+/* Evo-Section End */
+
+/* Team-Section Start */
+.ourteam {
+  margin-top: 35px;
+  color: #00ab08;
+  font-size: 55px;
+}
+
+.team-p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.card-team {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  background-color: #000e06;
+  height: 474px;
+  margin-bottom: 50px;
+  width: 100%;
+
+  .team-name {
+    font-size: 25px;
+    color: #00ab08;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .team-card-p {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 11px;
+  }
+
+  .team-twit {
+    font-size: 15px;
+    color: #00ab08 !important;
+    text-decoration: none;
+  }
+}
+/* Team-Section End */
+
+/* Partners-Section Start */
+.partners {
+  text-align: center;
+
+  .our-partners {
+    text-align: initial !important;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-size: 55px;
+    color: #00ab08;
+  }
+
+  .partner-logo {
+    margin-bottom: 50px;
+  }
+}
+
+/* Partners-Section End */
+
+/* Question-Section Start */
+.questions {
+  margin-bottom: 20px;
+}
+.question-cap {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  font-size: 55px;
+  color: #00ab08;
+}
+
+.question-card {
+  width: 100%;
+  height: auto;
+  background-color: #000e06;
+  padding: 20px;
+  margin-bottom: 25px;
+
+  .question-text {
+    color: #00ab08;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .answer-text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+  }
+}
+/* Question-Section End */
+
+/* Footer-Area Start */
+.footer {
+  height: 85px;
+
+  .footer-menu-ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+  }
+
+  .footer-menu-ul-li {
+    margin: 0px 15px;
+    color: #00ab08;
+    font-size: 20px;
+  }
+
+  .footer-menu-ul-li-a {
+    color: #00ab08 !important;
+    text-decoration: none;
+  }
+
+  .footer-social-icons-img {
+    margin: 0px 8px;
+  }
+
+  .footer-menu-ul-li-a:hover {
+    color: #00ab08 !important;
+    text-decoration: none;
+  }
+
+  .footer-logo-div {
+    margin: auto;
+  }
+
+  .footer-menu {
+    margin: auto;
+  }
+
+  .footer-social-icons {
+    margin: auto;
+  }
+
+  .ft-cont {
+    display: flex;
+    height: 95px;
+
+    justify-content: space-around;
+  }
+}
+/* Footer-Area End */
+
+/* Mint-Slider-Section Start */
+.mint-slider {
+  text-align: center;
+  background-image: url(images/welcome.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .img-team {
+    border: 8px solid #00ab08;
+  }
+
+  .mint-logo {
+    width: 20%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .prev-next {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .mint-p {
+    font-size: 18px;
+    margin: auto 20px;
+    color: white;
+  }
+
+  .prev-next-btn {
+    background-color: #00ab08;
+    padding: 15px 30px;
+  }
+
+  .prev-next-a {
+    cursor: pointer;
+  }
+
+  .mint-now {
+    background-color: #00ab08 !important;
+    color: white;
+    border: 0px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .mint-now-p-a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+    .mint-now-p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: white;
+    }
+  }
+}
+/* Mint-Slider-Section End */
+
+/* Liana-Section Start */
+.liana {
+  background-image: url(images/evo.svg);
+
+  .wil-col {
+    margin-top: 100px;
+
+    .whatisliana {
+      color: #00ab08;
+      font-size: 55px;
+    }
+
+    .whatisl-p {
+      margin-top: 30px;
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  .t-col {
+    margin-top: 50px;
+
+    .traits {
+      color: #00ab08;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+
+    .traits-p {
+      margin-bottom: 0px;
+      color: white;
+      font-size: 16px;
+    }
+
+    .traits-p-2 {
+      color: #00ab08;
+      font-size: 16px;
+    }
+  }
+
+  .sick-col {
+    margin-top: 50px;
+
+    .sickjump {
+      margin-bottom: 30px;
+      color: #00ab08;
+      font-size: 25px;
+    }
+
+    .sickjump-p {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+
+    .top-50 {
+      color: #00ab08;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .top-10{
+      color: #00ab08;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .other-top{
+      color: #00ab08;
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Liana-Section End */
+
+/* Green-Lines Start */
+.green-line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0px;
+  top: auto;
+  background: radial-gradient(50% 50% at 50% 50%, #00ab08 0%, #000000 100%);
+}
+
+.green-line-2 {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0px;
+  top: auto;
+  background: radial-gradient(50% 50% at 50% 50%, #00ab08 0%, #000000 100%);
+  margin-top: 5px;
+  padding-bottom: 3px;
+}
+
+.green-line-footer {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0px;
+  top: auto;
+  background: radial-gradient(50% 50% at 50% 50%, #00ab08 0%, #000000 100%);
+}
+
+.green-line-footer-2 {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0px;
+  top: auto;
+  background: radial-gradient(50% 50% at 50% 50%, #00ab08 0%, #000000 100%);
+  margin-top: 5px;
+}
+
+.space {
+  margin-top: 20px;
+}
+
+.green-bold-line {
+  position: absolute;
+  width: 100%;
+  height: 13px;
+  left: 0px;
+  top: auto;
+  background: radial-gradient(50% 50% at 50% 50%, #00ab08 0%, #000000 100%);
+}
+
+.card-top {
+  border: 4px solid;
+  border-image-slice: 4;
+  border-image-source: linear-gradient(
+    180deg,
+    #00ab08 0%,
+    rgba(255, 0, 229, 0) 100%);
+}
+
+.card-bottom {
+  border: 4px solid;
+  border-image-slice: 4;
+  border-image-source: linear-gradient(
+    180deg
+    , rgba(255, 0, 229, 0) 0%, #00ab08 100%);
+}
+/* Green-Lines End */
+
+/* Media Queries Start */
+@media only screen and (max-width: 800) {
+  header ul li {
+    padding: 5px;
+    margin: 0px 14px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header nav {
+    display: none;
+  }
+
+  .footer {
+    text-align: center !important;
+    height: auto !important;
+  }
+
+  .ft-cont {
+    display: block !important;
+    height: auto !important;
+    justify-content: space-around !important;
+  }
+
+  .logo-footer{
+    margin: 30px 0px 0px 0px !important;
+    text-align: center !important;
+    width: 160px !important;
+    height: 85px !important;
+  }
+
+  .footer-menu-ul {
+    display: block !important;
+    padding: 0 !important;
+    margin: 30px auto !important;
+  }
+
+  .footer-social-icons {
+    margin-bottom: 20px !important;
+  }
+
+  .evolution .evo-card .evo-card-p-div .evo-card-p {
+    margin-bottom: 0px;
+    color: white;
+    font-size: 12px;
+  }
+
+  .story {
+    margin-top: 90px !important;
+    margin-bottom: 70px !important;
+
+    .ourstory {
+      margin-bottom: 15px !important;
+      font-size: 35px !important;
+      color: #00ab08;
+    }
+  }
+
+  .evo {
+    margin-top: 35px !important;
+    font-size: 35px !important;
+    color: #00ab08;
+    margin-bottom: 10px;
+  }
+
+  .ourteam {
+    margin-top: 35px !important;
+    color: #00ab08;
+    font-size: 35px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .partners .our-partners {
+    text-align: center;
+    margin-top: 40px !important;
+    margin-bottom: 35px !important;
+    font-size: 35px !important;
+    color: #00ab08;
+  }
+
+  .question-cap {
+    margin-top: 35px !important;
+    margin-bottom: 40px !important;
+    font-size: 35px !important;
+    color: #00ab08;
+  }
+
+  .card-team {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: #000e06;
+    height: 474px;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-a {
+    color: white;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .welcome-logo {
+    width: 100%;
+  }
+
+  .welcome-social-icons {
+    margin-top: 25px;
+  }
+
+  .story-img {
+    width: 100%;
+  }
+
+  .ourstory-p {
+    padding-right: 0px !important;
+    font-size: 15px !important;
+  }
+
+  .evo-p {
+    font-size: 15px !important;
+    color: white;
+    margin-bottom: 45px !important;
+  }
+
+  .evocard-header-texts-white {
+    color: white;
+    font-size: 18px;
+  }
+
+  .team-p {
+    color: white;
+    font-size: 15px !important;
+    margin-bottom: 35px !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .story .ourstory {
+    margin-bottom: 25px !important;
+    font-size: 35px !important;
+    color: #00ab08;
+  }
+
+  .evocard-header-texts-white {
+    color: white;
+    font-size: 18px;
+  }
+
+  .evo-card-p {
+    margin-bottom: 0px;
+    color: white;
+    font-size: 10px;
+  }
+
+  .evo {
+    margin-top: 35px !important;
+    font-size: 35px !important;
+    color: #00ab08;
+    margin-bottom: 10px;
+  }
+
+  .ourteam {
+    margin-top: 35px !important;
+    color: #00ab08;
+    font-size: 35px !important;
+  }
+
+  .our-partners {
+    text-align: center;
+    margin-top: 40px !important;
+    margin-bottom: 55px !important;
+    font-size: 35px !important;
+    color: #00ab08;
+  }
+
+  .question-cap {
+    margin-top: 35px !important;
+    margin-bottom: 40px !important;
+    font-size: 25px !important;
+    color: #00ab08;
+  }
+
+  .welcome-p {
+    font-size: 14px !important;
+    color: white;
+    margin-bottom: 50px;
+  }
+}
+/* Media Queries End */
